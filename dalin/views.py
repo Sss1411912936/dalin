@@ -1,9 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from dalin.models import User
 # Create your views here.
 
 
 
+def haha(request):
+    return redirect('/index/')
 
 
 def index(request):
